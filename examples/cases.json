@@ -1,0 +1,6 @@
+[
+  {"id": "en01", "slice": "en", "text": "I was charged twice this month, please refund one.", "gold": {"department": ["billing"]}},
+  {"id": "en02", "slice": "en", "text": "The export button throws a 500 error since yesterday.", "gold": {"department": ["technical"]}},
+  {"id": "en03", "slice": "en", "text": "Thanks, that solved it!", "gold": {"department": ["none"]}},
+  {"id": "ar01", "slice": "ar", "text": "كم سعر الباقة السنوية لعشرة مستخدمين؟", "gold": {"department": ["sales"]}}
+]

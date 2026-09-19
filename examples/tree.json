@@ -1,0 +1,5 @@
+[
+  {"id": "customers", "labels": {"en": "Customers", "ar": "العملاء"}, "holds": ["contacts"]},
+  {"id": "purchasing", "labels": {"en": "Purchasing", "ar": "المشتريات"}, "holds": ["vendors"]},
+  {"id": "settings", "labels": {"en": "Settings", "ar": "الإعدادات"}, "holds": ["users"]}
+]

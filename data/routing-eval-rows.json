@@ -1,0 +1,1457 @@
+[
+ {
+  "id": "en01",
+  "slice": "en",
+  "text": "how many quotations did we send this month",
+  "latency_ms": 1036,
+  "operation": {
+   "choice": "count_sum",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "count_sum"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "quotations",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "quotations"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "en02",
+  "slice": "en",
+  "text": "show me the supplier quotes we got for the cement order",
+  "latency_ms": 1063,
+  "operation": {
+   "choice": "find_list",
+   "confidence": 0.98,
+   "p": 0.99,
+   "gold": [
+    "find_list"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "vendor_quotations",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "vendor_quotations"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "en03",
+  "slice": "en",
+  "text": "list the open requests for quotation",
+  "latency_ms": 1069,
+  "operation": {
+   "choice": "find_list",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "find_list"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "quotation_requests",
+   "confidence": 0.98,
+   "p": 0.98,
+   "gold": [
+    "quotation_requests"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "en04",
+  "slice": "en",
+  "text": "find leads from [city] that came in last week",
+  "latency_ms": 914,
+  "operation": {
+   "choice": "find_list",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "find_list"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "leads",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "leads"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "en05",
+  "slice": "en",
+  "text": "open the customer [company]",
+  "latency_ms": 933,
+  "operation": {
+   "choice": "open_one",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "open_one"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "companies",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "companies",
+    "contacts"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "en06",
+  "slice": "en",
+  "text": "what is the total of unpaid invoices",
+  "latency_ms": 999,
+  "operation": {
+   "choice": "count_sum",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "count_sum"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "invoices",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "invoices"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "en07",
+  "slice": "en",
+  "text": "how much stock of rebar 12mm do we have in the [city] warehouse",
+  "latency_ms": 1051,
+  "operation": {
+   "choice": "stock",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "stock"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "stock_counts",
+   "confidence": 0.55,
+   "p": 0.58,
+   "gold": [
+    "products",
+    "none"
+   ],
+   "ok": false
+  }
+ },
+ {
+  "id": "en08",
+  "slice": "en",
+  "text": "add a follow-up call with Ahmed tomorrow",
+  "latency_ms": 1057,
+  "operation": {
+   "choice": "create_update",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "create_update"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "activities",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "activities"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "en09",
+  "slice": "en",
+  "text": "what is waiting for my approval",
+  "latency_ms": 1041,
+  "operation": {
+   "choice": "approvals",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "approvals"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "none",
+   "confidence": 0.67,
+   "p": 0.7,
+   "gold": [
+    "none"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "en10",
+  "slice": "en",
+  "text": "write a report on this quarter's sales performance",
+  "latency_ms": 931,
+  "operation": {
+   "choice": "report",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "report"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "none",
+   "confidence": 0.64,
+   "p": 0.66,
+   "gold": [
+    "none",
+    "sales_orders"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "en11",
+  "slice": "en",
+  "text": "any new emails from the ministry",
+  "latency_ms": 963,
+  "operation": {
+   "choice": "mail",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "mail"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "mail_threads",
+   "confidence": 0.99,
+   "p": 1.0,
+   "gold": [
+    "mail_threads"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "en12",
+  "slice": "en",
+  "text": "thanks, that's all for now",
+  "latency_ms": 998,
+  "operation": {
+   "choice": "chitchat",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "chitchat"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "none",
+   "confidence": 0.99,
+   "p": 1.0,
+   "gold": [
+    "none"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "en13",
+  "slice": "en",
+  "text": "draft a letter to the tax office asking for an extension",
+  "latency_ms": 986,
+  "operation": {
+   "choice": "letter",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "letter"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "mail_threads",
+   "confidence": 0.36,
+   "p": 0.4,
+   "gold": [
+    "none"
+   ],
+   "ok": false
+  }
+ },
+ {
+  "id": "en14",
+  "slice": "en",
+  "text": "find the signed contract PDF for the port project",
+  "latency_ms": 971,
+  "operation": {
+   "choice": "files",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "files",
+    "find_list"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "documents",
+   "confidence": 0.93,
+   "p": 0.94,
+   "gold": [
+    "documents"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "en15",
+  "slice": "en",
+  "text": "which purchase orders are still pending delivery",
+  "latency_ms": 1341,
+  "operation": {
+   "choice": "find_list",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "find_list"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "purchase_orders",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "purchase_orders"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ar01",
+  "slice": "msa",
+  "text": "كم عدد عروض الأسعار التي أرسلناها هذا الشهر؟",
+  "latency_ms": 986,
+  "operation": {
+   "choice": "count_sum",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "count_sum"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "quotations",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "quotations"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ar02",
+  "slice": "msa",
+  "text": "اعرض عروض أسعار الموردين لطلبية الإسمنت",
+  "latency_ms": 985,
+  "operation": {
+   "choice": "find_list",
+   "confidence": 0.98,
+   "p": 0.99,
+   "gold": [
+    "find_list"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "vendor_quotations",
+   "confidence": 0.94,
+   "p": 0.95,
+   "gold": [
+    "vendor_quotations"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ar03",
+  "slice": "msa",
+  "text": "اعرض طلبات عروض الأسعار المفتوحة",
+  "latency_ms": 1053,
+  "operation": {
+   "choice": "find_list",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "find_list"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "quotation_requests",
+   "confidence": 0.91,
+   "p": 0.93,
+   "gold": [
+    "quotation_requests"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ar04",
+  "slice": "msa",
+  "text": "ابحث عن العملاء المحتملين من [city] الذين وصلوا الأسبوع الماضي",
+  "latency_ms": 1055,
+  "operation": {
+   "choice": "find_list",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "find_list"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "leads",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "leads"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ar05",
+  "slice": "msa",
+  "text": "افتح ملف العميل شركة [company]",
+  "latency_ms": 962,
+  "operation": {
+   "choice": "open_one",
+   "confidence": 0.99,
+   "p": 0.99,
+   "gold": [
+    "open_one"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "companies",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "companies",
+    "contacts"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ar06",
+  "slice": "msa",
+  "text": "ما إجمالي الفواتير غير المدفوعة؟",
+  "latency_ms": 1019,
+  "operation": {
+   "choice": "count_sum",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "count_sum"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "invoices",
+   "confidence": 0.99,
+   "p": 1.0,
+   "gold": [
+    "invoices"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ar07",
+  "slice": "msa",
+  "text": "كم الكمية المتوفرة من حديد التسليح ١٢ مم في مخزن [city]؟",
+  "latency_ms": 980,
+  "operation": {
+   "choice": "stock",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "stock"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "stock_counts",
+   "confidence": 0.51,
+   "p": 0.55,
+   "gold": [
+    "products",
+    "none"
+   ],
+   "ok": false
+  }
+ },
+ {
+  "id": "ar08",
+  "slice": "msa",
+  "text": "أضف مكالمة متابعة مع أحمد غدًا",
+  "latency_ms": 959,
+  "operation": {
+   "choice": "create_update",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "create_update"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "activities",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "activities"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ar09",
+  "slice": "msa",
+  "text": "ما الطلبات التي تنتظر موافقتي؟",
+  "latency_ms": 1032,
+  "operation": {
+   "choice": "approvals",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "approvals"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "none",
+   "confidence": 0.43,
+   "p": 0.46,
+   "gold": [
+    "none"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ar10",
+  "slice": "msa",
+  "text": "اكتب تقريرًا عن أداء المبيعات لهذا الربع",
+  "latency_ms": 1068,
+  "operation": {
+   "choice": "report",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "report"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "none",
+   "confidence": 0.57,
+   "p": 0.59,
+   "gold": [
+    "none",
+    "sales_orders"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ar11",
+  "slice": "msa",
+  "text": "هل وصلت رسائل بريد جديدة من الوزارة؟",
+  "latency_ms": 1012,
+  "operation": {
+   "choice": "mail",
+   "confidence": 0.98,
+   "p": 0.99,
+   "gold": [
+    "mail"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "mail_threads",
+   "confidence": 0.99,
+   "p": 0.98,
+   "gold": [
+    "mail_threads"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ar12",
+  "slice": "msa",
+  "text": "شكرًا، هذا كل شيء الآن",
+  "latency_ms": 1058,
+  "operation": {
+   "choice": "chitchat",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "chitchat"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "none",
+   "confidence": 0.97,
+   "p": 0.98,
+   "gold": [
+    "none"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ar13",
+  "slice": "msa",
+  "text": "اكتب خطابًا إلى مصلحة الضرائب نطلب فيه تمديد المهلة",
+  "latency_ms": 1049,
+  "operation": {
+   "choice": "letter",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "letter"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "mail_threads",
+   "confidence": 0.3,
+   "p": 0.34,
+   "gold": [
+    "none"
+   ],
+   "ok": false
+  }
+ },
+ {
+  "id": "ar14",
+  "slice": "msa",
+  "text": "ابحث عن ملف العقد الموقّع لمشروع الميناء",
+  "latency_ms": 1038,
+  "operation": {
+   "choice": "files",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "files",
+    "find_list"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "documents",
+   "confidence": 0.85,
+   "p": 0.86,
+   "gold": [
+    "documents"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ar15",
+  "slice": "msa",
+  "text": "ما أوامر الشراء التي لم يتم توريدها بعد؟",
+  "latency_ms": 1049,
+  "operation": {
+   "choice": "find_list",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "find_list"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "purchase_orders",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "purchase_orders"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ly01",
+  "slice": "dialect",
+  "text": "قداش عرض سعر بعتنا الشهر هذا؟",
+  "latency_ms": 906,
+  "operation": {
+   "choice": "find_list",
+   "confidence": 0.72,
+   "p": 0.75,
+   "gold": [
+    "count_sum"
+   ],
+   "ok": false
+  },
+  "resource": {
+   "choice": "quotations",
+   "confidence": 0.99,
+   "p": 1.0,
+   "gold": [
+    "quotations"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ly02",
+  "slice": "dialect",
+  "text": "ورّيني عروض الموردين اللي جونا على طلبية الاسمنت",
+  "latency_ms": 1024,
+  "operation": {
+   "choice": "find_list",
+   "confidence": 0.93,
+   "p": 0.94,
+   "gold": [
+    "find_list"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "vendor_quotations",
+   "confidence": 0.96,
+   "p": 0.96,
+   "gold": [
+    "vendor_quotations"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ly03",
+  "slice": "dialect",
+  "text": "نبي نشوف طلبات عروض الأسعار اللي مازالت مفتوحة",
+  "latency_ms": 1009,
+  "operation": {
+   "choice": "find_list",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "find_list"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "quotation_requests",
+   "confidence": 0.85,
+   "p": 0.86,
+   "gold": [
+    "quotation_requests"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ly04",
+  "slice": "dialect",
+  "text": "دورلي على الزباين المحتملين متاع [city] اللي جو الجمعة اللي فاتت",
+  "latency_ms": 1114,
+  "operation": {
+   "choice": "find_list",
+   "confidence": 0.89,
+   "p": 0.91,
+   "gold": [
+    "find_list"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "leads",
+   "confidence": 0.64,
+   "p": 0.66,
+   "gold": [
+    "leads"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ly05",
+  "slice": "dialect",
+  "text": "حللي ملف الزبون شركة [company]",
+  "latency_ms": 969,
+  "operation": {
+   "choice": "report",
+   "confidence": 0.57,
+   "p": 0.61,
+   "gold": [
+    "open_one"
+   ],
+   "ok": false
+  },
+  "resource": {
+   "choice": "companies",
+   "confidence": 0.97,
+   "p": 0.98,
+   "gold": [
+    "companies",
+    "contacts"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ly06",
+  "slice": "dialect",
+  "text": "قداش المجموع متاع الفواتير اللي مازال ما تخلصتش؟",
+  "latency_ms": 1141,
+  "operation": {
+   "choice": "count_sum",
+   "confidence": 0.99,
+   "p": 0.99,
+   "gold": [
+    "count_sum"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "invoices",
+   "confidence": 0.98,
+   "p": 0.98,
+   "gold": [
+    "invoices"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ly07",
+  "slice": "dialect",
+  "text": "قداش عندنا حديد ١٢ في مخزن [city] توا؟",
+  "latency_ms": 993,
+  "operation": {
+   "choice": "stock",
+   "confidence": 0.99,
+   "p": 1.0,
+   "gold": [
+    "stock"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "products",
+   "confidence": 0.59,
+   "p": 0.61,
+   "gold": [
+    "products",
+    "none"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ly08",
+  "slice": "dialect",
+  "text": "زيد مكالمة متابعة مع أحمد بكرة",
+  "latency_ms": 1036,
+  "operation": {
+   "choice": "create_update",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "create_update"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "activities",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "activities"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ly09",
+  "slice": "dialect",
+  "text": "شن فيه يستنى في موافقتي؟",
+  "latency_ms": 1081,
+  "operation": {
+   "choice": "approvals",
+   "confidence": 0.99,
+   "p": 1.0,
+   "gold": [
+    "approvals"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "none",
+   "confidence": 0.29,
+   "p": 0.34,
+   "gold": [
+    "none"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ly10",
+  "slice": "dialect",
+  "text": "ديرلي تقرير على المبيعات متاع الربع هذا",
+  "latency_ms": 972,
+  "operation": {
+   "choice": "report",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "report"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "sales_orders",
+   "confidence": 0.48,
+   "p": 0.51,
+   "gold": [
+    "none",
+    "sales_orders"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ly11",
+  "slice": "dialect",
+  "text": "فيه ايميلات جديدة جت من الوزارة؟",
+  "latency_ms": 924,
+  "operation": {
+   "choice": "mail",
+   "confidence": 0.97,
+   "p": 0.97,
+   "gold": [
+    "mail"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "mail_threads",
+   "confidence": 0.99,
+   "p": 1.0,
+   "gold": [
+    "mail_threads"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ly12",
+  "slice": "dialect",
+  "text": "بارك الله فيك، خلاص هكي",
+  "latency_ms": 939,
+  "operation": {
+   "choice": "chitchat",
+   "confidence": 0.98,
+   "p": 0.99,
+   "gold": [
+    "chitchat"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "none",
+   "confidence": 0.94,
+   "p": 0.95,
+   "gold": [
+    "none"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ly13",
+  "slice": "dialect",
+  "text": "اكتبلي جواب لمصلحة الضرائب نطلبو فيه تمديد",
+  "latency_ms": 1042,
+  "operation": {
+   "choice": "letter",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "letter"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "mail_threads",
+   "confidence": 0.32,
+   "p": 0.36,
+   "gold": [
+    "none"
+   ],
+   "ok": false
+  }
+ },
+ {
+  "id": "ly14",
+  "slice": "dialect",
+  "text": "لقيلي ملف العقد المسكّر متاع مشروع الميناء",
+  "latency_ms": 1008,
+  "operation": {
+   "choice": "files",
+   "confidence": 0.67,
+   "p": 0.71,
+   "gold": [
+    "files",
+    "find_list"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "documents",
+   "confidence": 0.77,
+   "p": 0.79,
+   "gold": [
+    "documents"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "ly15",
+  "slice": "dialect",
+  "text": "شن أوامر الشراء اللي مازالت ما وصلتش؟",
+  "latency_ms": 1057,
+  "operation": {
+   "choice": "find_list",
+   "confidence": 0.99,
+   "p": 1.0,
+   "gold": [
+    "find_list"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "purchase_orders",
+   "confidence": 0.99,
+   "p": 0.99,
+   "gold": [
+    "purchase_orders"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "mx01",
+  "slice": "mixed",
+  "text": "kam quotation ba3atna el shahr hada",
+  "latency_ms": 1282,
+  "operation": {
+   "choice": "chitchat",
+   "confidence": 0.12,
+   "p": 0.19,
+   "gold": [
+    "count_sum"
+   ],
+   "ok": false
+  },
+  "resource": {
+   "choice": "quotations",
+   "confidence": 0.9,
+   "p": 0.91,
+   "gold": [
+    "quotations"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "mx02",
+  "slice": "mixed",
+  "text": "ورّيني الـ supplier quotes متاع الاسمنت",
+  "latency_ms": 1119,
+  "operation": {
+   "choice": "find_list",
+   "confidence": 0.89,
+   "p": 0.91,
+   "gold": [
+    "find_list"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "vendor_quotations",
+   "confidence": 0.99,
+   "p": 1.0,
+   "gold": [
+    "vendor_quotations"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "mx03",
+  "slice": "mixed",
+  "text": "list الـ RFQs اللي مازالت open",
+  "latency_ms": 859,
+  "operation": {
+   "choice": "find_list",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "find_list"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "quotation_requests",
+   "confidence": 0.99,
+   "p": 1.0,
+   "gold": [
+    "quotation_requests"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "mx04",
+  "slice": "mixed",
+  "text": "dawer 3la el leads mta3 [city]",
+  "latency_ms": 922,
+  "operation": {
+   "choice": "find_list",
+   "confidence": 0.74,
+   "p": 0.77,
+   "gold": [
+    "find_list"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "leads",
+   "confidence": 0.85,
+   "p": 0.86,
+   "gold": [
+    "leads"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "mx05",
+  "slice": "mixed",
+  "text": "افتح quotation متاع الشركة",
+  "latency_ms": 1122,
+  "operation": {
+   "choice": "open_one",
+   "confidence": 0.89,
+   "p": 0.9,
+   "gold": [
+    "open_one"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "quotations",
+   "confidence": 0.86,
+   "p": 0.88,
+   "gold": [
+    "quotations"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "mx06",
+  "slice": "mixed",
+  "text": "total الفواتير unpaid قداش؟",
+  "latency_ms": 973,
+  "operation": {
+   "choice": "count_sum",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "count_sum"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "invoices",
+   "confidence": 0.99,
+   "p": 1.0,
+   "gold": [
+    "invoices"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "mx07",
+  "slice": "mixed",
+  "text": "stock متاع rebar 12 في warehouse [city]",
+  "latency_ms": 1052,
+  "operation": {
+   "choice": "stock",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "stock"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "stock_counts",
+   "confidence": 0.57,
+   "p": 0.6,
+   "gold": [
+    "products",
+    "none"
+   ],
+   "ok": false
+  }
+ },
+ {
+  "id": "mx08",
+  "slice": "mixed",
+  "text": "zid call follow-up m3a Ahmed bokra",
+  "latency_ms": 1044,
+  "operation": {
+   "choice": "create_update",
+   "confidence": 0.99,
+   "p": 1.0,
+   "gold": [
+    "create_update"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "activities",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "activities"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "mx09",
+  "slice": "mixed",
+  "text": "شن pending approvals عندي؟",
+  "latency_ms": 1053,
+  "operation": {
+   "choice": "approvals",
+   "confidence": 0.98,
+   "p": 0.99,
+   "gold": [
+    "approvals"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "none",
+   "confidence": 0.69,
+   "p": 0.71,
+   "gold": [
+    "none"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "mx10",
+  "slice": "mixed",
+  "text": "dirli report 3la el sales mta3 el rob3 hada",
+  "latency_ms": 1047,
+  "operation": {
+   "choice": "report",
+   "confidence": 0.99,
+   "p": 1.0,
+   "gold": [
+    "report"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "sales_orders",
+   "confidence": 0.78,
+   "p": 0.8,
+   "gold": [
+    "none",
+    "sales_orders"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "mx11",
+  "slice": "mixed",
+  "text": "فيه emails جداد من الوزارة؟",
+  "latency_ms": 1045,
+  "operation": {
+   "choice": "mail",
+   "confidence": 0.99,
+   "p": 0.99,
+   "gold": [
+    "mail"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "mail_threads",
+   "confidence": 0.99,
+   "p": 1.0,
+   "gold": [
+    "mail_threads"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "mx12",
+  "slice": "mixed",
+  "text": "ok thanks خلاص",
+  "latency_ms": 925,
+  "operation": {
+   "choice": "chitchat",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "chitchat"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "none",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "none"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "mx13",
+  "slice": "mixed",
+  "text": "draft letter لمصلحة الضرائب على extension",
+  "latency_ms": 915,
+  "operation": {
+   "choice": "letter",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "letter"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "documents",
+   "confidence": 0.39,
+   "p": 0.43,
+   "gold": [
+    "none"
+   ],
+   "ok": false
+  }
+ },
+ {
+  "id": "mx14",
+  "slice": "mixed",
+  "text": "lgili el contract PDF mta3 mashrou3 el mina",
+  "latency_ms": 950,
+  "operation": {
+   "choice": "files",
+   "confidence": 0.77,
+   "p": 0.8,
+   "gold": [
+    "files",
+    "find_list"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "documents",
+   "confidence": 0.81,
+   "p": 0.82,
+   "gold": [
+    "documents"
+   ],
+   "ok": true
+  }
+ },
+ {
+  "id": "mx15",
+  "slice": "mixed",
+  "text": "purchase orders اللي مازالت ما وصلتش",
+  "latency_ms": 981,
+  "operation": {
+   "choice": "find_list",
+   "confidence": 0.99,
+   "p": 1.0,
+   "gold": [
+    "find_list"
+   ],
+   "ok": true
+  },
+  "resource": {
+   "choice": "purchase_orders",
+   "confidence": 1.0,
+   "p": 1.0,
+   "gold": [
+    "purchase_orders"
+   ],
+   "ok": true
+  }
+ }
+]

@@ -1,0 +1,19 @@
+walk-run/
+# run artefacts can hold page text and screenshots: never commit them
+results/
+jev-run/
+run/
+runs/
+trace.jsonl
+verdict.json
+step-*.png
+final.png
+
+# secrets
+.env
+.env.*
+*.env
+
+__pycache__/
+node_modules
+.DS_Store

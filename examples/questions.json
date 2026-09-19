@@ -1,0 +1,12 @@
+{
+  "department": {
+    "type": "choice",
+    "instructions": "The state is one message a customer sent to a software company's support inbox. Which team should handle it?",
+    "criteria": {
+      "billing": "Payments, payouts, invoices, refunds or charges.",
+      "technical": "Bugs, errors, outages, integrations or something not working.",
+      "sales": "Pricing, plans, upgrades or buying for the first time.",
+      "none": "A greeting, thanks, spam, or anything no team needs to act on."
+    }
+  }
+}

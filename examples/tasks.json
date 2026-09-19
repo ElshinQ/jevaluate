@@ -1,0 +1,5 @@
+{
+  "contacts": {"en": "Find the phone number of the person you met yesterday", "ar": "ابحث عن رقم هاتف الشخص الذي قابلته أمس"},
+  "vendors": {"en": "Check which supplier sells printer ink", "ar": "اعرف أي مورد يبيع حبر الطابعات"},
+  "users": {"en": "Give a new colleague access to the system", "ar": "امنح زميلاً جديداً صلاحية الدخول إلى النظام"}
+}

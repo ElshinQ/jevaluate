@@ -1,0 +1,106 @@
+{
+ "driver": "vision",
+ "gate": 0.8,
+ "finishedAt": "2026-09-19T13:38:59.824Z",
+ "wallSeconds": 33,
+ "goalsReached": 5,
+ "goals": 5,
+ "drivingCalls": 7,
+ "drivingTokens": 7510,
+ "drivingAvgMs": 1880,
+ "drivingCostOffPeak": 0.0012628499999999998,
+ "drivingCostPeak": 0.0025256999999999996,
+ "reviewCalls": 5,
+ "reviewTokens": 5404,
+ "reviewCostOffPeak": 0.00127815,
+ "reviewCostPeak": 0.0025563,
+ "totals": {
+  "jev": {
+   "calls": 0,
+   "in": 0,
+   "ms": 0
+  },
+  "dsDrive": {
+   "calls": 7,
+   "in": 7207,
+   "out": 303,
+   "ms": 13163
+  },
+  "dsReview": {
+   "calls": 5,
+   "in": 4365,
+   "out": 1039,
+   "ms": 13428
+  }
+ },
+ "results": [
+  {
+   "id": "login",
+   "goal": "Log in as <v0> with password <v1>.",
+   "status": "reached",
+   "steps": 3,
+   "review": {
+    "verdict": "clean",
+    "findings": []
+   }
+  },
+  {
+   "id": "contacts",
+   "goal": "Open the Contacts page.",
+   "status": "reached",
+   "steps": 1,
+   "review": {
+    "verdict": "clean",
+    "findings": []
+   }
+  },
+  {
+   "id": "invoices",
+   "goal": "Open the Invoices page.",
+   "status": "reached",
+   "steps": 1,
+   "review": {
+    "verdict": "defects",
+    "findings": [
+     {
+      "severity": "high",
+      "where": "Empty-state card in the Invoices page, the large heading above 'Create your first invoice to see it here.'",
+      "issue": "A raw translation key 'invoices.empty_state.title' is rendered as the card's heading instead of a human-readable title."
+     }
+    ]
+   }
+  },
+  {
+   "id": "reports",
+   "goal": "Open the Reports page.",
+   "status": "reached",
+   "steps": 1,
+   "review": {
+    "verdict": "defects",
+    "findings": [
+     {
+      "severity": "medium",
+      "where": "Reports card, the sentence under the 'This quarter' heading",
+      "issue": "The subtitle 'Revenue is up 12% on last quarter across 48 paid invoices.' is rendered in a very light gray on the white card, making it barely legible."
+     }
+    ]
+   }
+  },
+  {
+   "id": "settings",
+   "goal": "Open the Settings page.",
+   "status": "reached",
+   "steps": 1,
+   "review": {
+    "verdict": "defects",
+    "findings": [
+     {
+      "severity": "high",
+      "where": "Settings card, the helper text row beneath the Organisation name field",
+      "issue": "The blue \"Save changes\" button is rendered on top of the sentence \"Changes apply to every organisation.\", clipping the text so it reads \"Changes apply to ev\" ... \"organisation.\" and hiding the words behind the button."
+     }
+    ]
+   }
+  }
+ ]
+}

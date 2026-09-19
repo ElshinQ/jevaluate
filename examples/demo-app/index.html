@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Sign in</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Demo app for scripts/walk.mjs. Invented data. Three defects are planted on purpose:
+     1. Invoices: a raw translation key is shown as the empty-state title.
+     2. Settings: the Save button overlaps the help text.
+     3. Reports: the summary line is nearly invisible (very low contrast). -->
+<style>
+body{font:16px/1.5 system-ui,sans-serif;margin:0;background:#f6f5f1;color:#1d2433}
+header{background:#1f4fd8;color:#fff;padding:14px 28px;display:flex;gap:22px;align-items:center}
+header b{margin-right:auto} header a{color:#fff;text-decoration:none;padding:4px 8px;border-radius:6px} header a:hover{background:#ffffff33}
+main{max-width:860px;margin:36px auto;padding:0 28px} .card{background:#fff;border:1px solid #dcdad3;border-radius:12px;padding:24px;margin-top:18px}
+label{display:block;margin:14px 0 4px} input[type=text],input[type=email],input[type=password]{width:320px;padding:9px;border:1px solid #b9b6ad;border-radius:8px;font:inherit}
+button,input[type=submit]{background:#1f4fd8;color:#fff;border:0;border-radius:8px;padding:10px 18px;font:inherit;cursor:pointer;margin-top:18px}
+table{border-collapse:collapse;width:100%} td,th{text-align:left;padding:9px;border-bottom:1px solid #e6e4dd}
+.overlap{position:relative;height:64px}.overlap p{position:absolute;left:0;top:18px;margin:0}.overlap button{position:absolute;left:150px;top:0}
+.faint{color:#f1f0ec}
+</style></head><body>
+<div id="login"><main><div class="card"><h1>Sign in to Northwind Desk</h1>
+<form id="f"><label for="email">Email</label><input id="email" name="email" type="email">
+<label for="pw">Password</label><input id="pw" name="password" type="password">
+<br><input type="submit" value="Sign in"><p id="err" style="color:#b3261e"></p></form></div></main></div>
+<div id="app" hidden><header><b>Northwind Desk</b>
+<a href="#" data-v="contacts">Contacts</a><a href="#" data-v="invoices">Invoices</a><a href="#" data-v="reports">Reports</a><a href="#" data-v="settings">Settings</a></header>
+<main>
+<section data-view="home"><h1>Home</h1><div class="card">Welcome back. Pick a section from the bar above.</div></section>
+<section data-view="contacts" hidden><h1>Contacts</h1><div class="card"><table><tr><th>Name</th><th>Company</th><th>Last contact</th></tr>
+<tr><td>Ada Example</td><td>Example Freight</td><td>3 days ago</td></tr><tr><td>Sam Sample</td><td>Sample Foods</td><td>Yesterday</td></tr></table></div></section>
+<section data-view="invoices" hidden><h1>Invoices</h1><div class="card"><h2>invoices.empty_state.title</h2><p>Create your first invoice to see it here.</p><button type="button">New invoice</button></div></section>
+<section data-view="reports" hidden><h1>Reports</h1><div class="card"><h2>This quarter</h2><p class="faint">Revenue is up 12% on last quarter across 48 paid invoices.</p><table><tr><th>Month</th><th>Paid</th></tr><tr><td>July</td><td>14</td></tr><tr><td>August</td><td>19</td></tr></table></div></section>
+<section data-view="settings" hidden><h1>Settings</h1><div class="card"><label for="org">Organisation name</label><input id="org" name="organisation" type="text" value="Northwind Desk">
+<div class="overlap"><p>Changes apply to every member of the organisation.</p><button type="button">Save changes</button></div></div></section>
+</main></div>
+<script>
+const show=(v)=>{document.querySelectorAll('[data-view]').forEach(s=>s.hidden=s.dataset.view!==v);document.title=v[0].toUpperCase()+v.slice(1)};
+f.onsubmit=(e)=>{e.preventDefault();if(email.value==='owner@example.test'&&pw.value==='demo-pass'){login.hidden=true;app.hidden=false;show('home')}else err.textContent='Wrong email or password'};
+document.querySelectorAll('[data-v]').forEach(a=>a.onclick=(e)=>{e.preventDefault();show(a.dataset.v)});
+</script></body></html>

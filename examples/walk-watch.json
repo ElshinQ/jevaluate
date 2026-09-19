@@ -1,0 +1,37 @@
+{
+  "start": "examples/demo-app/index.html",
+  "product": "a small business web application, English interface",
+  "goals": [
+    {
+      "id": "login",
+      "goal": "Log in as owner@example.test with password 'demo-pass'.",
+      "reached": "^Home$"
+    },
+    {
+      "id": "contacts",
+      "goal": "Open the Contacts page.",
+      "reached": "^Contacts$"
+    },
+    {
+      "id": "invoices",
+      "goal": "Open the Invoices page.",
+      "reached": "^Invoices$"
+    },
+    {
+      "id": "reports",
+      "goal": "Open the Reports page.",
+      "reached": "^Reports$"
+    },
+    {
+      "id": "settings",
+      "goal": "Open the Settings page.",
+      "reached": "^Settings$"
+    },
+    {
+      "id": "billing",
+      "goal": "Open the Billing page.",
+      "reached": "^Billing$"
+    }
+  ],
+  "_note": "Same as walk.json plus a sixth goal that does not exist in the demo app. Jev's best guess (Invoices) scores under the gate, so the walk stops for a human instead of clicking. Used for the recorded demo."
+}

@@ -1,0 +1,106 @@
+{
+ "driver": "jev",
+ "gate": 0.8,
+ "finishedAt": "2026-09-19T13:38:18.841Z",
+ "wallSeconds": 22,
+ "goalsReached": 5,
+ "goals": 5,
+ "drivingCalls": 7,
+ "drivingTokens": 4359,
+ "drivingAvgMs": 529,
+ "drivingCostOffPeak": 0.000183078,
+ "drivingCostPeak": 0.000183078,
+ "reviewCalls": 5,
+ "reviewTokens": 5491,
+ "reviewCostOffPeak": 0.00133035,
+ "reviewCostPeak": 0.0026607,
+ "totals": {
+  "jev": {
+   "calls": 7,
+   "in": 4359,
+   "ms": 3703
+  },
+  "dsDrive": {
+   "calls": 0,
+   "in": 0,
+   "out": 0,
+   "ms": 0
+  },
+  "dsReview": {
+   "calls": 5,
+   "in": 4365,
+   "out": 1126,
+   "ms": 11086
+  }
+ },
+ "results": [
+  {
+   "id": "login",
+   "goal": "Log in as <v0> with password <v1>.",
+   "status": "reached",
+   "steps": 3,
+   "review": {
+    "verdict": "clean",
+    "findings": []
+   }
+  },
+  {
+   "id": "contacts",
+   "goal": "Open the Contacts page.",
+   "status": "reached",
+   "steps": 1,
+   "review": {
+    "verdict": "clean",
+    "findings": []
+   }
+  },
+  {
+   "id": "invoices",
+   "goal": "Open the Invoices page.",
+   "status": "reached",
+   "steps": 1,
+   "review": {
+    "verdict": "defects",
+    "findings": [
+     {
+      "severity": "medium",
+      "where": "empty-state card heading in the middle of the Invoices page",
+      "issue": "The card title shows the raw translation key \"invoices.empty_state.title\" instead of readable English copy."
+     }
+    ]
+   }
+  },
+  {
+   "id": "reports",
+   "goal": "Open the Reports page.",
+   "status": "reached",
+   "steps": 1,
+   "review": {
+    "verdict": "defects",
+    "findings": [
+     {
+      "severity": "medium",
+      "where": "Reports card, subtitle line under the 'This quarter' heading",
+      "issue": "The sentence 'Revenue is up 12% on last quarter across 48 paid invoices.' is rendered in a very pale gray on the white card and is barely legible."
+     }
+    ]
+   }
+  },
+  {
+   "id": "settings",
+   "goal": "Open the Settings page.",
+   "status": "reached",
+   "steps": 1,
+   "review": {
+    "verdict": "defects",
+    "findings": [
+     {
+      "severity": "high",
+      "where": "Settings card, helper text directly above/below the form ('Changes apply to every organisation.')",
+      "issue": "The blue 'Save changes' button is rendered on top of the helper sentence, hiding the words between 'ev' and 'organisation' so the text reads as 'Changes apply to ev...organisation.'."
+     }
+    ]
+   }
+  }
+ ]
+}

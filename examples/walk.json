@@ -1,0 +1,11 @@
+{
+  "start": "examples/demo-app/index.html",
+  "product": "a small business web application, English interface",
+  "goals": [
+    { "id": "login", "goal": "Log in as owner@example.test with password 'demo-pass'.", "reached": "^Home$" },
+    { "id": "contacts", "goal": "Open the Contacts page.", "reached": "^Contacts$" },
+    { "id": "invoices", "goal": "Open the Invoices page.", "reached": "^Invoices$" },
+    { "id": "reports", "goal": "Open the Reports page.", "reached": "^Reports$" },
+    { "id": "settings", "goal": "Open the Settings page.", "reached": "^Settings$" }
+  ]
+}
